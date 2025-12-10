@@ -1,6 +1,8 @@
 ipykernel
 seaborn
 matplotlib
-starvers @ git+https://github.com/GreenfishK/starvers.git
+starvers @ git+https://github.com/AllStarsAT/starvers.git
 plotly
 requests
+numpy
+pandas
