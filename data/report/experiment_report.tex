@@ -1,0 +1,147 @@
+\documentclass[sigconf]{acmart}
+
+\AtBeginDocument{ \providecommand\BibTeX{ Bib\TeX } }
+\setcopyright{acmlicensed}
+\copyrightyear{2025}
+\acmYear{2025}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+\acmConference[BI 2025]{Business Intelligence}{-}{-}
+
+\begin{document}
+
+\title{BI2025 Experiment Report - Group 009}
+%% ---Authors: Dynamically added ---
+
+          \author{Liliana Sulyok}
+          \authornote{Student A, Matr.Nr.: 12307565}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+          \author{Zita Dorina Marton}
+          \authornote{Student B, Matr.Nr.: 12340246}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+
+\begin{abstract}
+  This report documents the machine learning experiment for Group 009, following the CRISP-DM process model.
+\end{abstract}
+
+\ccsdesc[500]{Computing methodologies~Machine learning}
+\keywords{CRISP-DM, Provenance, Knowledge Graph, Machine Learning}
+
+\maketitle
+
+%% --- 1. Business Understanding ---
+\section{Business Understanding}
+
+\subsection{Data Source and Scenario}
+The dataset is the Online Shoppers Purchasing Intention Dataset from the 
+UCI Machine Learning Repository. It contains 12,330 anonymized, unique user
+sessions from an e-commerce website collected over one year. The detaset 
+includes behavioral, technical, and user-related attributes such as page
+duration, bounce rates, visitor type. The binary target variable indicates 
+whether a session resulted in revenue. 
+
+Business Scenario:
+We assume the role of data scientists for a mid-sized online retail company
+that seeks to improve its marketing efficiency by identifing sessions with high
+purchase intent in real time. This allows the marketing team to apply targeted
+interventions (such as live chat support or limited-time discount pop-ups 
+specifically for users likely to purchase) only when beneficial. 
+Predicting purchase likelihood enables cost-efficient personalization, 
+optimizing marketing resources and strategic decision-making
+
+\subsection{Business Objectives}
+Primary Objective:
+Increase online revenue by identifying sessions with high purchase intent and 
+by proactively engaging customers using targeted, cost-efficient interventions 
+that increase the probability of conversion.
+
+Secondary Objectives:
+Improve the overall conversion rate through real-time personalization.
+Reduce unnecessary promotional costs on users who are highly unlikely to buy
+regardless of incentives.
+
+%% --- 2. Data Understanding ---
+\section{Data Understanding}
+\textbf{Dataset Description:} Describe the data set.
+
+The following features were identified in the dataset:
+
+\begin{table}[h]
+  \caption{Raw Data Features}
+  \label{tab:features}
+  \begin{tabular}{lp{0.2\linewidth}p{0.4\linewidth}}
+    \toprule
+    \textbf{Feature Name} & \textbf{Data Type} & \textbf{Description} \\
+    \midrule
+    Administrative & integer> & Number of administrative pages visited. \\
+    Administrative\_Duration & double> & Time spent on administrative pages (sec). \\
+    BounceRates & double> & Average bounce rate. \\
+    Browser & integer> & Browser code. \\
+    ExitRates & double> & Average exit rate. \\
+    Informational & integer> & Number of informational pages visited. \\
+    Informational\_Duration & double> & Time spent on informational pages (sec). \\
+    Month & string> & Month of session. \\
+    OperatingSystems & integer> & Operating system code. \\
+    PageValues & double> & Average value a user visited before completing a transaction. \\
+    ProductRelated & integer> & Number of product-related pages viewed. \\
+    ProductRelated\_Duration & double> & Total time on product pages (sec). \\
+    Region & integer> & Region code. \\
+    Revenue & boolean> & Class label: whether purchase occurred. \\
+    SpecialDay & double> & Proximity to a special day (0–1). \\
+    TrafficType & integer> & Traffic source category. \\
+    VisitorType & string> & Returning or new visitor. \\
+    Weekend & boolean> & Boolean indicating weekend visit. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%% --- 3. Data Preparation ---
+\section{Data Preparation}
+\subsection{Data Cleaning}
+Describe your Data preparation steps here and include respective graph data.
+
+
+%% --- 4. Modeling ---
+\section{Modeling}
+
+\subsection{Hyperparameter Configuration}
+The model was trained using the following hyperparameter settings:
+
+\begin{table}[h]
+  \caption{Hyperparameter Settings}
+  \label{tab:hyperparams}
+  \begin{tabular}{lp{0.4\linewidth}l}
+    \toprule
+    \textbf{Parameter} & \textbf{Description} & \textbf{Value} \\
+    \midrule
+    
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Training Run}
+A training run was executed with the following characteristics:
+\begin{itemize}
+    \item \textbf{Algorithm:} 
+    \item \textbf{Start Time:} 
+    \item \textbf{End Time:} 
+    \item \textbf{Result:}  = 
+\end{itemize}
+
+%% --- 5. Evaluation ---
+\section{Evaluation}
+
+%% --- 6. Deployment ---
+\section{Deployment}
+
+\section{Conclusion}
+
+\end{document}
