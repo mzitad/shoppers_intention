@@ -2,6 +2,8 @@
 
 This project aims to predict whether an online shopping session will result in revenue using the "Online Shoppers Purchasing Intention Dataset" from the UCI Machine Learning Repository.
 
+DOI: 10.5281/zenodo.18293361
+
 ## Project Overview
 The dataset contains 12,330 anonymized user sessions collected over one year. It includes behavioral attributes (page durations, bounce rates), technical data (operating systems, browsers), and user-related attributes (visitor type, weekend visits).
 
